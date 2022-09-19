@@ -16,10 +16,12 @@ get_header();
 			the_post();
         ?>
             <h1>商品詳細</h1>
+			<!-- function.phpで定義したgenreを取得する -->
 			<?php $terms = get_the_terms(get_the_ID(), 'genre'); ?>
-
+			<!-- $termsがある場合は出力する -->
 			<?php if ($terms): ?>
 			<ul>
+				<!-- 配列で取得されたタクソソミーの要素を一つずつ取りだしながら変数の中に入れる -->
 				<?php foreach ($terms as $term): ?>
 					<li><a href="<?php echo get_term_link($term); ?>"><?php echo esc_html($term->name); ?></a></li>
 				<?php endforeach; ?>
