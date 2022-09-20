@@ -7,6 +7,11 @@
  * @package hiroshi
  */
 
+add_shortcode('date', function(){
+	return get_the_title();
+/* 	return date('Y年 n月 j日'); */
+});
+
 add_action('init', function() {
 	register_post_type('item', [
 		'label' => '商品',
