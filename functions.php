@@ -7,11 +7,6 @@
  * @package hiroshi
  */
 
-add_shortcode('date', function(){
-	return get_the_title();
-/* 	return date('Y年 n月 j日'); */
-});
-
 add_shortcode('sum', function($atts) {
 	$atts = shortcode_atts([
 		'x' => 0,
