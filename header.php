@@ -11,7 +11,7 @@
 
 ?>
 <!doctype html>
-<!-- コメントを追加しました -->
+<!-- コメント変更します -->
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
